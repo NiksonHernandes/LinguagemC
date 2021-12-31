@@ -1,0 +1,3 @@
+ze RegistryStorage with status 2
+#6(I)[2021-12-30 23:58:26,834]{0000062C}<NvcPluginLoadHel> Secure loading C:\WINDOWS\System32\DriverStore\FileRepository\nvaci.inf_amd64_30e446a72214201b\Display.NvContainer\plugins\Session/nvxdsyncplugin.dll - 8.17.14.9709 at 00007FFA0B150000 took 58716 microseconds
+#7(I)[2021-12-30 23:58:26,834]{0000062C}<NvcPluginManager> Loaded C:\WINDOWS\System32\DriverStore\FileRepository\nvaci.inf_amd64_30e446a72214201b\Display.NvContainer\plugins\Session/nvxdsy
