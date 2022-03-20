@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <conio.h>//para usar o GETCH() -> para pausar a tela
+#include <windows.h>
 
 int main(){
 
@@ -10,7 +11,7 @@ int main(){
     char palavra[30];
 
     //abrindo o arquivo como tipo de abertura W;
-    ponteiro_arquivo = fopen("C:\\users\\Acer\\OneDrive\\Área de Trabalho\\arquivo_palavra.txt", "w"); //fopen -> para abrir um arquivo, caso ele n exista é criado
+    ponteiro_arquivo = fopen("C:\\users\\Acer\\OneDrive\\Área de Trabalho\\arquivo_palavra.txt", "a"); //fopen -> para abrir um arquivo, caso ele n exista é criado
     // w -> é um formato para gravação de dados, sobrescreve o que estava no arquivo;
     // a -> ele adiciona um novo txt ao em vez de sobreescrevar
     // r -> Permissão de abertura somente para leitura. É necessário que o arquivo já esteja presente no disco.
@@ -35,6 +36,8 @@ int main(){
         //usando fclose para fechar o arquivo txt
         fclose(ponteiro_arquivo);
 
+        printf("Aqui vai um apito\a\a\a\a\a"); // o "\a" faz um som de apito
+        Beep(1000,1500); //faz um som com uma frequenca de 1000 Hertz e com tempo d 1500 milisegundos d duraçao.
         printf("Dados gravados com sucesso!");
 
     }
