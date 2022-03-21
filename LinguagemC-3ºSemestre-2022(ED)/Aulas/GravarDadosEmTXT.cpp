@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <conio.h>//para usar o GETCH() -> para pausar a tela
-#include <windows.h>
+#include <windows.h>//para usar o beep
 
 int main(){
 
