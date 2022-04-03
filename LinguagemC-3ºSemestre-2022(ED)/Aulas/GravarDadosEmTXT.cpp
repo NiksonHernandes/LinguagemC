@@ -9,13 +9,15 @@ int main(){
 
     FILE *ponteiro_arquivo; //cria variável ponteiro para o arquivo
     char palavra[30];
+    int *i = 0;
 
     //abrindo o arquivo como tipo de abertura W;
-    ponteiro_arquivo = fopen("C:\\users\\Acer\\OneDrive\\Área de Trabalho\\arquivo_palavra.txt", "a"); //fopen -> para abrir um arquivo, caso ele n exista é criado
+    ponteiro_arquivo = fopen("C:\\users\\Acer\\OneDrive\\Área de Trabalho\\arquivo_palavra[%i].txt", "a", *i); //fopen -> para abrir um arquivo, caso ele n exista é criado
     // w -> é um formato para gravação de dados, sobrescreve o que estava no arquivo;
     // a -> ele adiciona um novo txt ao em vez de sobreescrevar
     // r -> Permissão de abertura somente para leitura. É necessário que o arquivo já esteja presente no disco.
 
+    i ++;
 /*
 "r" Texto Leitura. Arquivo deve existir.
 "w" Texto Escrita. Cria arquivo se não houver. Apaga o anterior se ele existir.
